@@ -1,0 +1,170 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1504\cocoasubrtf830
+{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;\f1\fnil\fcharset0 Menlo-Bold;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red255\green255\blue255;\red180\green36\blue25;
+\red46\green174\blue187;\red47\green180\blue29;\red159\green160\blue28;}
+{\*\expandedcolortbl;;\csgray\c0;\csgray\c100000;\cssrgb\c76409\c21698\c12524;
+\cssrgb\c20196\c73240\c78250;\cssrgb\c20238\c73898\c14947;\cssrgb\c68468\c68012\c14208;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs22 \cf2 \cb3 \CocoaLigature0 Last login: Tue Apr 28 12:12:53 on ttys000\
+Biros-MacBook-2:~ Eszter$ cd ~/djangogirls\
+Biros-MacBook-2:djangogirls Eszter$ . myvenv/bin/activate\
+(myvenv) Biros-MacBook-2:djangogirls Eszter$ django-admin startproject mysite .\
+(myvenv) Biros-MacBook-2:djangogirls Eszter$ django-admin.py\
+\
+Type 'django-admin.py help <subcommand>' for help on a specific subcommand.\
+\
+Available subcommands:\
+\
+\cf4 [django]\cf2 \
+    check\
+    compilemessages\
+    createcachetable\
+    dbshell\
+    diffsettings\
+    dumpdata\
+    flush\
+    inspectdb\
+    loaddata\
+    makemessages\
+    makemigrations\
+    migrate\
+    runserver\
+    sendtestemail\
+    shell\
+    showmigrations\
+    sqlflush\
+    sqlmigrate\
+    sqlsequencereset\
+    squashmigrations\
+    startapp\
+    startproject\
+    test\
+    testserver\
+\cf4 Note that only Django core commands are listed as settings are not properly configured (error: Requested setting INSTALLED_APPS, but settings are not configured. You must either define the environment variable DJANGO_SETTINGS_MODULE or call settings.configure() before accessing settings.).\cf2 \
+(myvenv) Biros-MacBook-2:djangogirls Eszter$ python manage.py migrate\
+
+\f1\b \cf5 Operations to perform:
+\f0\b0 \cf2 \
+
+\f1\b   Apply all migrations: 
+\f0\b0 admin, auth, contenttypes, sessions\
+
+\f1\b \cf5 Running migrations:
+\f0\b0 \cf2 \
+  Applying contenttypes.0001_initial...
+\f1\b \cf6  OK
+\f0\b0 \cf2 \
+  Applying auth.0001_initial...
+\f1\b \cf6  OK
+\f0\b0 \cf2 \
+  Applying admin.0001_initial...
+\f1\b \cf6  OK
+\f0\b0 \cf2 \
+  Applying admin.0002_logentry_remove_auto_add...
+\f1\b \cf6  OK
+\f0\b0 \cf2 \
+  Applying admin.0003_logentry_add_action_flag_choices...
+\f1\b \cf6  OK
+\f0\b0 \cf2 \
+  Applying contenttypes.0002_remove_content_type_name...
+\f1\b \cf6  OK
+\f0\b0 \cf2 \
+  Applying auth.0002_alter_permission_name_max_length...
+\f1\b \cf6  OK
+\f0\b0 \cf2 \
+  Applying auth.0003_alter_user_email_max_length...
+\f1\b \cf6  OK
+\f0\b0 \cf2 \
+  Applying auth.0004_alter_user_username_opts...
+\f1\b \cf6  OK
+\f0\b0 \cf2 \
+  Applying auth.0005_alter_user_last_login_null...
+\f1\b \cf6  OK
+\f0\b0 \cf2 \
+  Applying auth.0006_require_contenttypes_0002...
+\f1\b \cf6  OK
+\f0\b0 \cf2 \
+  Applying auth.0007_alter_validators_add_error_messages...
+\f1\b \cf6  OK
+\f0\b0 \cf2 \
+  Applying auth.0008_alter_user_username_max_length...
+\f1\b \cf6  OK
+\f0\b0 \cf2 \
+  Applying auth.0009_alter_user_last_name_max_length...
+\f1\b \cf6  OK
+\f0\b0 \cf2 \
+  Applying auth.0010_alter_group_name_max_length...
+\f1\b \cf6  OK
+\f0\b0 \cf2 \
+  Applying auth.0011_update_proxy_permissions...
+\f1\b \cf6  OK
+\f0\b0 \cf2 \
+  Applying sessions.0001_initial...
+\f1\b \cf6  OK
+\f0\b0 \cf2 \
+(myvenv) Biros-MacBook-2:djangogirls Eszter$ python manage.py runserver\
+Watching for file changes with StatReloader\
+Performing system checks...\
+\
+System check identified no issues (0 silenced).\
+April 28, 2020 - 13:20:07\
+Django version 2.2.12, using settings 'mysite.settings'\
+Starting development server at http://127.0.0.1:8000/\
+Quit the server with CONTROL-C.\
+[28/Apr/2020 13:20:26] "GET / HTTP/1.1" 200 16348\
+[28/Apr/2020 13:20:26] "GET /static/admin/css/fonts.css HTTP/1.1" 200 423\
+[28/Apr/2020 13:20:26] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876\
+[28/Apr/2020 13:20:26] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692\
+[28/Apr/2020 13:20:26] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 86184\
+Not Found: /favicon.ico\
+[28/Apr/2020 13:20:27] \cf7 "GET /favicon.ico HTTP/1.1" 404 1972\cf2 \
+/Users/Eszter/djangogirls/mysite/settings.py changed, reloading.\
+Watching for file changes with StatReloader\
+Performing system checks...\
+\
+System check identified no issues (0 silenced).\
+April 29, 2020 - 12:16:58\
+Django version 2.2.12, using settings 'mysite.settings'\
+Starting development server at http://127.0.0.1:8000/\
+Quit the server with CONTROL-C.\
+/Users/Eszter/djangogirls/mysite/settings.py changed, reloading.\
+Watching for file changes with StatReloader\
+Performing system checks...\
+\
+System check identified no issues (0 silenced).\
+April 29, 2020 - 12:17:26\
+Django version 2.2.12, using settings 'mysite.settings'\
+Starting development server at http://127.0.0.1:8000/\
+Quit the server with CONTROL-C.\
+/Users/Eszter/djangogirls/blog/models.py changed, reloading.\
+Watching for file changes with StatReloader\
+Performing system checks...\
+\
+System check identified no issues (0 silenced).\
+April 29, 2020 - 12:46:54\
+Django version 2.2.12, using settings 'mysite.settings'\
+Starting development server at http://127.0.0.1:8000/\
+Quit the server with CONTROL-C.\
+[29/Apr/2020 12:47:46] "GET / HTTP/1.1" 200 16348\
+[29/Apr/2020 12:47:46] "GET /static/admin/css/fonts.css HTTP/1.1" 200 423\
+[29/Apr/2020 12:47:46] \cf5 "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0\cf2 \
+[29/Apr/2020 12:47:46] \cf5 "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0\cf2 \
+[29/Apr/2020 12:47:46] \cf5 "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0\cf2 \
+/Users/Eszter/djangogirls/blog/admin.py changed, reloading.\
+Watching for file changes with StatReloader\
+Performing system checks...\
+\
+System check identified no issues (0 silenced).\
+April 29, 2020 - 13:11:42\
+Django version 2.2.12, using settings 'mysite.settings'\
+Starting development server at http://127.0.0.1:8000/\
+Quit the server with CONTROL-C.\
+[29/Apr/2020 13:12:22] \cf6 "GET /admin/ HTTP/1.1" 302 0\cf2 \
+[29/Apr/2020 13:12:23] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 1822\
+[29/Apr/2020 13:12:23] "GET /static/admin/css/base.css HTTP/1.1" 200 16378\
+[29/Apr/2020 13:12:23] "GET /static/admin/css/login.css HTTP/1.1" 200 1233\
+[29/Apr/2020 13:12:23] "GET /static/admin/css/responsive.css HTTP/1.1" 200 17944\
+\
+}

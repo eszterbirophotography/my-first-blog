@@ -1,0 +1,6 @@
+astring = "fs123v"
+bfloat = 10.000
+cint = 20
+
+if astring = "fs123v":
+  print("String is: %s" % astring)
